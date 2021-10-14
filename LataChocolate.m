@@ -14,3 +14,19 @@
 %              2. Angel Jesus Santiago Hernández
 %              3. Angel Manuel Zarco Valerio
 %Date:         14/10/2021
+%Version:      1
+%Usage:        >>pwd
+%              >>cd Desktop
+%              >>cd Octave
+%              >>LataChocolate
+%Notes:        1. Se necesita el programa Octave, usar su linea de comando.
+%              
+%              2. https://octaveintro.readthedocs.io/en/latest/index.html
+disp 'Formulas:'
+disp '--Formula volumen: (pi)(r)^2(h) ---> (pi)(r)^2=400'
+disp '--Formula altura: h=400/(pi)(r^2)'
+disp '--Formula area circulo: (pi)(r^2)'
+disp '--Formula area rectangulo: (b)(h) ---> 2(pi)(r)(h)'
+disp '--Formula area total: (b)(h)+(2)(pi)(r^2) --->((2)(pi)(r))(400/((pi)(r^2))+((2)(pi)(r^2))'
+disp '--Resolviendo tenemos: 800/r+(2(pi)(r^2))'
+%Limpiar variables
