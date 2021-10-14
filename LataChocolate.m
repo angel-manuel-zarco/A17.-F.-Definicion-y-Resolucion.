@@ -30,3 +30,21 @@ disp '--Formula area rectangulo: (b)(h) ---> 2(pi)(r)(h)'
 disp '--Formula area total: (b)(h)+(2)(pi)(r^2) --->((2)(pi)(r))(400/((pi)(r^2))+((2)(pi)(r^2))'
 disp '--Resolviendo tenemos: 800/r+(2(pi)(r^2))'
 %Limpiar variables
+clear
+%Ejercicio minimo para la lata de chocolate
+%Definir el rango
+r = 0:0.1:40;
+%Valor de la funcion
+at = @(r) (pi() * (r.^2)) + (800./(r)); 
+%Funcion a graficar
+y = (pi() * (r.^2)) + (800./(r));
+%Funcion para determinar el valor minimo
+resr = fminbnd(at, 0, 1);
+%Graficar r, y
+plot(r,y);
+%Titulo de la grafica
+title(['Minimo material r = ' num2str(resr)]);
+%Etiqueta para X
+xlabel(['Minimo r = ' num2str(resr)]);
+%Etiqueta para Y
+ylabel(['Minimo y = ' num2str(at(resr))]);
